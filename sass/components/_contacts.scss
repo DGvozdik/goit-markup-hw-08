@@ -1,0 +1,38 @@
+/* Contacts */
+.contacts{
+    display:flex;
+    margin-left: auto;
+    gap: 50px;
+}
+        
+.contacts-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+ }
+.contacts-link {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     max-width: 100%;
+     height: 100%;
+    color: var(--text-color);
+    cursor: pointer;
+    display: inline-flex;
+     align-items: center;
+    justify-content: center;
+    transition: color 250ms var(--timing-function);
+
+        &:hover, &:focus {
+            color: var(--active-color);  
+        }
+    }
+.contacts-icon{
+    display:flex;
+    width: 16px;
+    max-height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    }

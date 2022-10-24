@@ -1,0 +1,80 @@
+$primary-bg-color: #FFFFFF;
+
+:root {
+    --block-bg-color: #2F303A;
+    --section-bg-color: #F5F4FA;
+    --active-color: #2196F3;
+    --primary-text-color: #212121;
+    --text-color: #757575;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    background-color: $primary-bg-color;
+    color: var(--primary-text-color);
+}
+
+img {
+    display: block;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--head-color);
+}
+
+a, button {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
