@@ -1,7 +1,17 @@
-
 /* Navigation */
 .nav{
-    margin-left: 93px;
+    @media screen and (min-width:0px) and (max-width:767px){
+        display: none; 
+    }
+
+    @media screen and (min-width:$tablet){
+        margin-left: 88px; 
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-left: 93px;  
+    }
+    
 }
 .nav-list {
     display: flex;
