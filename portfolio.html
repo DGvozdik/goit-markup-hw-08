@@ -13,7 +13,8 @@
       <header class="header">
         <!-- Logo -->
         <div class="container header-container">
-            <a href="./index.html" class="logo logo-first">Web<span class="logo logo-end">Studio</span></a>
+            <a href="./index.html" class="header-logo"><span class="logo-first">Web</span>
+                <span class="logo-end">Studio</span></a>
         <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
@@ -210,54 +211,61 @@
         </div>
         </section>
     </main>
-    <footer>
-        <div class="container footer-container">
-        <div class="footer-adress">
-         <!-- Footer logo -->
-                <a href="./index.html" class="logo logo-first">Web<span class="logo footer-end">Studio</span></a>
-        <!-- Footer adress -->
-                <address>
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <a href="https://goo.gl/maps/C7pXMFegKn5EvWC58" class="adress-link" target="_blank" rel="noreferrer noopener"> м. Київ, пр-т Лесі Українки, 26 </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="tell:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-                </address>
-        </div>
-            <div class="footer-social">
-                <p>ПРИЄДНУЙТЕСЬ</p>
-                   <ul class="footer-cosial-list">
-                        <li><a class="footer-link" href="https://www.instagram.com/">
-                            <svg class="icon-footer" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram-footer"></use>
-                            </svg>
-                            <span class="visually-hidden"> Instagram</span></a></li>
-                        <li><a class="footer-link" href="https://twitter.com/">
-                            <svg class="icon-footer" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter-footer" ></use>
-                            </svg>
-                            <span class="visually-hidden">Twitter</span></a></li>
-                        <li><a class="footer-link" href="https://www.facebook.com/">
-                            <svg class="icon-footer" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook-footer"></use>
-                            </svg>
-                            <span class="visually-hidden">Facebook</span></a></li>
-                        <li><a class="footer-link" href="https://www.linkedin.com/">
-                            <svg class="icon-footer" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin-footer" ></use>
-                            </svg>
-                            <span class="visually-hidden">LinkedIn</span></a></li>
-                    </ul>
-            </div>
-            <form class="footer-form" action="">
+    <div class="container footer-container">
+            
+                <div class="footer-adress">
+            
+                    <div class="footer-data">
+                               
+            <!-- Footer adress -->
+                        <address>
+                             <!-- Footer logo -->
+                             <a href="./index.html" class="footer-logo"><span class="logo-first">Web</span>
+                                <span class="footer-end">Studio</span>
+                                </a>
+                            <ul class="footer-list">  
+                                <li class="footer-item">
+                                    <a href="https://goo.gl/maps/C7pXMFegKn5EvWC58" class="adress-link" target="_blank" rel="noreferrer noopener"> м. Київ, пр-т Лесі Українки, 26 </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="tell:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="footer-social">
+                        <p>ПРИЄДНУЙТЕСЬ</p>
+                            <ul class="footer-cosial-list">
+                            <li><a class="footer-link" href="https://www.instagram.com/">
+                                <svg class="icon-footer" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                                </svg>
+                                <span class="visually-hidden"> Instagram</span></a></li>
+                            <li><a class="footer-link" href="https://twitter.com/">
+                                <svg class="icon-footer" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter-footer" ></use>
+                                </svg>
+                                <span class="visually-hidden">Twitter</span></a></li>
+                            <li><a class="footer-link" href="https://www.facebook.com/">
+                                <svg class="icon-footer" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                                </svg>
+                                <span class="visually-hidden">Facebook</span></a></li>
+                            <li><a class="footer-link" href="https://www.linkedin.com/">
+                                <svg class="icon-footer" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin-footer" ></use>
+                                </svg>
+                                <span class="visually-hidden">LinkedIn</span></a></li>
+                            </ul>
+                    </div>
+                </div>
+              
+            <div class="footer-form">
                 <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-                    <div class="mail-form">
+                    <form class="mail-form">
                             <input type="email" name="mail" id="mail" lang="En" placeholder="E-mail">
                             <button class="footer-button" type="submit">
                                 Підписатися
@@ -265,10 +273,10 @@
                                     <use href="./images/icons.svg#icon-telegram"></use>
                                 </svg>
                             </button>
-                    </div>
-            </form>
-        </div>
-    </footer>
+                    </form>
+            </div>
+        </div>  
+    </footer> 
     <!-- Mobile-menu -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
