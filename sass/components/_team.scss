@@ -114,7 +114,7 @@
     transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 .team-social:hover, .team-social:focus{
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
     background-color: var(--active-color);
 }
 .team-icon{

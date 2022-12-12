@@ -116,7 +116,8 @@ a, button {
 }
 
 /* Logo */
-.logo {
+.header-logo,
+.footer-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -132,10 +133,25 @@ a, button {
   margin: 0;
 }
 @media screen and (min-width: 1200px) {
-  .logo {
+  .header-logo,
+.footer-logo {
     font-size: 26px;
     line-height: 1.19;
   }
+}
+
+.header-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    padding: 0;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 
 .logo-first {
@@ -418,11 +434,6 @@ a, button {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .about__list {
-    margin-bottom: 36px;
-  }
-}
 
 .about__item {
   display: block;
@@ -704,7 +715,7 @@ a, button {
 }
 
 .team-social:hover, .team-social:focus {
-  color: var(--primary-bg-color);
+  color: #FFFFFF;
   background-color: var(--active-color);
 }
 
@@ -825,6 +836,9 @@ footer {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -846,10 +860,6 @@ footer {
 
 .footer-list {
   display: block;
-}
-
-.logo.logo-first {
-  margin-bottom: 20px;
 }
 
 .adress-link {
@@ -967,15 +977,15 @@ footer {
 
 .footer-form {
   display: block;
-  width: 450px;
-  margin-top: 60px;
+  margin: 60px auto;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .footer-form {
+    width: 450px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1034,8 +1044,9 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .mail-form input {
-    width: 480px;
-    margin-left: auto;
+    width: 450px;
+    display: block;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1537,13 +1548,6 @@ footer {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -1562,6 +1566,14 @@ footer {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .menu .link {
@@ -1589,7 +1601,7 @@ footer {
 .mobile-contacts {
   display: block;
   margin: auto 0;
-  margin-top: 274px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -1600,16 +1612,22 @@ footer {
 
 .mobile-contacts-telephone {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--active-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts-telephone {
+    font-size: 34px;
+    line-height: 1.18;
+  }
 }
 
 .mobile-contacts-post {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
@@ -1624,27 +1642,32 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 10px;
 }
 
 .mobile-social li {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--active-color);
   padding-right: 5px;
+  padding-left: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 @media screen and (min-width: 480px) {
   .mobile-social li {
-    padding-right: 10px;
     font-size: 18px;
     line-height: 1.22;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
 .mobile-social li:last-child {
-  padding: 0;
+  padding-right: 0;
   border: none;
+}
+
+.mobile-social li:first-child {
+  padding-left: 0;
 }/*# sourceMappingURL=main.css.map */
